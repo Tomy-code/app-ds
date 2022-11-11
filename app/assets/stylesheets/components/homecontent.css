@@ -1,0 +1,36 @@
+.homecontent{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.titlesbox{
+  padding: 50px;
+}
+
+.containerimagehome{
+  margin-top: 15px;
+}
+
+.imagehome{
+  border-radius: 10%;
+}
+
+.titlesbox h1{
+  font-weight: bold;
+  color: #0055A4 ;
+  margin-bottom: 15px;
+}
+
+.titlesbox h2{
+  font-weight: 500;
+  color: #0055A4;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.titlesbox p {
+font-size: 16px;
+color: #0A0908;
+}
