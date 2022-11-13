@@ -1,0 +1,10 @@
+#emailform{
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+}
+.form-group{
+  font-size: 14px;
+  justify-content: center;
+  padding: 15px;
+}
