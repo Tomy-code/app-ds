@@ -1,16 +1,17 @@
 .homecontent{
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 85px;
-  margin-right: 85px;
+  justify-content: space-between;
+  margin-left: 55px;
 }
 
 .titlesbox{
-  padding: 50px;
+  margin-top: 70px;
+  margin-left: 10px;
 }
 
 .containerimagehome{
-  margin-top: 15px;
+  padding: 30px;
+  margin-top: 40px;
 }
 
 .imagehome{
