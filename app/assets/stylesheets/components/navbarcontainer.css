@@ -1,8 +1,11 @@
-.container{
-  margin-left: 0 !important;
-}
 
 nav.navbar-light{
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.border-grey{
   border-bottom: 1px solid lightgray !important;
-  top: sticky;
 }

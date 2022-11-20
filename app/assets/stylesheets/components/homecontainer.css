@@ -1,6 +1,6 @@
-.homecontainer {
-  width: 90%;
-  margin: 0 auto;
+.homecontainer{
   font-family: 'Inter', sans-serif;
-  padding-left: 40px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
 }
