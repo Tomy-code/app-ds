@@ -6,3 +6,16 @@
 @import url("components/homecontent.css");
 @import url("components/boostrapform.css");
 @import url("components/buttons.css");
+
+#results li {
+  cursor: grab;
+}
+
+#results li:active {
+  cursor: grabbing;
+}
+
+#results li.ghost {
+  filter: grayscale(1);
+  opacity: 0.5;
+}
