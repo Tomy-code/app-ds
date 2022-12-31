@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/thomas-andrieu/.nvm/versions/node/v16.13.1/bin/node /Users/thomas-andrieu/.yarn/bin/yarn.js add storablesjs
+
+PATH: 
+  /Users/thomas-andrieu/.yarn/bin:/Users/thomas-andrieu/.config/yarn/global/node_modules/.bin:./bin:./node_modules/.bin:/Users/thomas-andrieu/.nvm/versions/node/v16.13.1/bin:/Users/thomas-andrieu/.rbenv/shims:/Users/thomas-andrieu/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/thomas-andrieu/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.13.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/storablesjs: Not found
+      at Request.params.callback [as _callback] (/Users/thomas-andrieu/.yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/Users/thomas-andrieu/.yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (/Users/thomas-andrieu/.yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (/Users/thomas-andrieu/.yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
