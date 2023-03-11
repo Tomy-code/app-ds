@@ -7,3 +7,10 @@ font-weight: 600;
   justify-content: center;
   padding: 15px;
 }
+.form-group-registration{
+  font-size: 16x;
+  justify-content: center;
+  padding: 15px;
+  padding-top: 70px;
+  font-weight: 600;
+}

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta name="DailyStory" content="Page description. No longer than 155 characters.">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+</html>
+
+<body>
+  <div class = "border grey">
+    <nav class="navbar navbar-light">
+      <div>
+          <a class="navbar-brand" href="#">
+            <img src="../assets/logo.jpeg" alt="" width="200" height="70" >
+          </a>
+      </div>
+      <div>
+        <a class="btn btn-gradiant navbar" btn href="#" > Essayer Gratuitement
+        </a>
+      </div>
+    </nav>
+  </div>
+  <div class ="homecontent">
+    <div class ="row-d-flex justify-content-around">
+      <div class = "form-group-registration" >
+        <%= form_with model: @user do |f| %>
+          <%= f.label :email %>
+          <%= f.text_field :emailadress %>
+          <%= f.submit %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>
