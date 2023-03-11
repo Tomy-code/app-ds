@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
     root to: "pages#home"
-    get "registration", to: "pages#registration"
+    get "registration", to: "pages#registration", as: :registration
 end
