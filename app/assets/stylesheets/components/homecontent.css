@@ -20,17 +20,18 @@
 .titlesbox h1{
   font-weight: bold;
   color: #0055A4 ;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .titlesbox h2{
   font-weight: 500;
   color: #0055A4;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 28px;
 }
 
 .titlesbox p {
 font-size: 16px;
 color: #0A0908;
+margin-bottom: 120px;
 }
