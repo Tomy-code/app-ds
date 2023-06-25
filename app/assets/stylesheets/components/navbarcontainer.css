@@ -9,3 +9,8 @@ nav.navbar-light{
 .border-grey{
   border-bottom: 1px solid lightgray !important;
 }
+
+.navbar-brand{
+  width : 200px;
+  height :80px;
+}

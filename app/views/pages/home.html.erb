@@ -14,10 +14,9 @@
     <div class = "border grey">
       <nav class="navbar navbar-light">
         <div>
-          <a class="navbar-brand" href="#">
-              <img src="../assets/logo.jpeg" alt="" width="200" height="70" >
-          </a>
-        </div>
+          <%= link_to root_path do %>
+          <%= image_tag "logo.jpg", class: "navbar-brand" %> <% end %>
+         </div>
         <div>
           <a class="btn btn-gradiant navbar" <%= link_to "Essayer gratuitement", users_new_path %></a>
         </div>
