@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     get "users/:id", to: "users#show", as: :user
     post "users", to: "users#create"
     delete "users/:id", to: "users#destroy"
-    get 'newsletters/send_daily', to: 'newsletters#send_daily'
+    get "/send_newsletter", to: "newsletters#send_daily"
   end

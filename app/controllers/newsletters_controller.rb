@@ -1,9 +1,8 @@
 class NewslettersController < ApplicationController
   def send_daily
-    User.find_each do |user|
-      content = 'Contenu de la newsletter'  # Ici, générez le contenu de votre newsletter
-      NewsletterMailer.send_daily_newsletter(user.emailadress, content).deliver_now
+    User.all.each do |user|
+      NewsletterMailer.send_daily_newsletter(user.emailadress, "Le contenu de votre newsletter").deliver_now
     end
-    redirect_to root_path, notice: 'La newsletter a été envoyée.'
+    redirect_to root_path, notice: 'Newsletter envoyée.'
   end
 end
