@@ -24,6 +24,13 @@ class UsersController < ApplicationController
     redirect_to users_path, status: :see_other
   end
 
+  #def send_daily
+    #User.find_each do |user|
+     # NewsletterMailer.send_daily_newsletter(user.emailadress, "Le contenu de votre newsletter").deliver_now
+    #end
+    #redirect_to root_path, notice: 'Newsletter envoyée.'
+  #end
+
 private
 
 def user_params
