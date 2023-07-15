@@ -25,16 +25,14 @@ class UsersController < ApplicationController
   end
 
   def send_daily
-    @user.find_each do |user|
+    users = User.all(params[:id])
+    users.each. do |user|
       UserMailer.send_daily_newsletter(user).deliver_now
     end
-    redirect_to root_path, notice: 'Newsletter envoyée.'
   end
 
 private
 
 def user_params
   params.require(:user).permit(:emailadress)
-end
-
 end
