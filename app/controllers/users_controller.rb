@@ -25,11 +25,11 @@ class UsersController < ApplicationController
   end
 
   def send_daily
-    users = User.all(params[:id])
+    users = User.all.emailadress
     users.each. do |user|
-      UserMailer.send_daily_newsletter(user).deliver_now
-    end
+      UserMailer.send_daily_newsletter(users).deliver_now
   end
+end
 
 private
 

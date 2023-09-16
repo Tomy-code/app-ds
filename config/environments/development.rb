@@ -60,10 +60,17 @@ Rails.application.configure do
   config.assets.quiet = true
 
   # Config action Mailer pour environement de dev.
-  config.action_mailer.delivery_method = :letter_opener
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  onfig.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'example.com',
+  user_name:            'thomasandrieu1997@gmail.com',
+  password:             '5oLqk9gBNtJkP7E',
+  authentication:       'plain',
+  enable_starttls_auto: true,
+  open_timeout:         5,
+  read_timeout:         5 }
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
