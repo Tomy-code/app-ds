@@ -59,6 +59,9 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  #added to perfom deliveries
+  config.action_mailer.perform_deliveries = true
+
   # Config action Mailer pour environement de dev.
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -66,7 +69,7 @@ Rails.application.configure do
   port:                 587,
   domain:               'example.com',
   user_name:            'thomasandrieu1997@gmail.com',
-  password:             'hxqw cvqp uxcw idip',
+  password:             'evdoofkduoblgzfv',
   authentication:       'plain',
   enable_starttls_auto: true,
   open_timeout:         5,

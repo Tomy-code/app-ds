@@ -5,7 +5,7 @@ class UserMailer < ApplicationMailer
   def welcome_email
     @user = params[:user]
     @url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Bienvenue chez DailyStory')
+    mail(to: @user.emailadress, subject: 'Bienvenue chez DailyStory')
   end
 
   def send_daily_newsletter(user)
