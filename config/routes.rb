@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
     root to: "pages#home"
 
-    ressources :categories
+    resources :categories
 
     get "users", to: "users#index"
     get "users/new", to: "users#new"
