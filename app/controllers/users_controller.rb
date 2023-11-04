@@ -36,9 +36,10 @@ class UsersController < ApplicationController
     redirect_to users_path, status: :see_other
   end
 
-  def send_multiple_daily
-    @users = User.all
-      UserMailer.send_daily_newsletter(users).deliver_now
+  def daily_newsletter
+    User.find_each do |user|
+      UserMailer.with(user: user).send_daily_newsletter.deliver_now
+    end
   end
 end
 
