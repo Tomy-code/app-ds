@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
-    root to: "pages#home"
-
-    resources :categories
-
+ devise_for :users
+ root to: "pages#home"
     get "users", to: "users#index"
     get "users/new", to: "users#new"
     get "/users/:id", to: "users#show", as: :user
     post "users", to: "users#create"
     delete "users/:id", to: "users#destroy"
     get "/send_newsletter", to: "newsletters#send_daily"
-  end
+  resource :categories
+
+end
